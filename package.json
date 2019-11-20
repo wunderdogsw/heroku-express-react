@@ -1,0 +1,23 @@
+{
+  "name": "heroku-express-react",
+  "description": "A template for heroku deployable Express and React App",
+  "author": "Tomi Piri",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.4.0"
+  },
+  "engineStrict" : true,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
